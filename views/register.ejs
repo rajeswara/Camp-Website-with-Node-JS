@@ -1,0 +1,34 @@
+<% include ./partials/header %> 
+
+<head>
+
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+
+
+
+ <div class="container">
+
+      <div id="login">
+
+        <form action="/register" method="POST">
+
+          <fieldset class="clearfix">
+
+            <p><span class="fontawesome-user"></span><input type="text" name="username" value="Username" onBlur="if(this.value == '') this.value = 'Username'" onFocus="if(this.value == 'Username') this.value = ''" required></p> <!-- JS because of IE support; better: placeholder="Username" -->
+            <p><span class="fontawesome-lock"></span><input type="password" name="password" value="Password" onBlur="if(this.value == '') this.value = 'Password'" onFocus="if(this.value == 'Password') this.value = ''" required></p> <!-- JS because of IE support; better: placeholder="Password" -->
+            <p><input type="submit" value="Sign up"></p>
+
+          </fieldset>
+
+        </form>
+
+       
+
+      </div> <!-- end login -->
+
+    </div>
+
+
+<% include ./partials/footer %> 

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>YelpCamp</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Theme CSS -->
+    <link href="/css/agency.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="ws-bg.css" />
+</head>
+
+<body id="page-top" class="index">
+<div class="content">
+<header>
+        <div class="container">
+            <div class="intro-text">
+                <div class="intro-lead-in">YelpCamp!</div>
+                <div class="intro-heading">Welcome to YelpCamp</div>
+                <a href="/campgrounds" class="page-scroll btn btn-xl">View All Campgrounds</a>
+            </div>
+        </div>
+    </header>
+</div>
+    <!-- Navigation -->
+    <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">YelpCamp</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                     <% if(!currentUser){ %>
+                    <li>
+                        <a class="page-scroll" href="/login">Login</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="/register">Sign Up</a>
+                    </li>
+                      <% } else { %>
+                      <li><a href="#">Signed In As <%= currentUser.username %></a></li>
+                    <li>
+                        <a class="page-scroll" href="/logout">Logout</a>
+                    </li>
+                     <% } %>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Header -->
+    
+    <!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+        <li><img src="/data1/images/38733414campwallpapers.jpg" alt="38733414-camp-wallpapers" title="38733414-camp-wallpapers" id="wows1_0"/></li>
+        <li><a href="http://wowslider.com"><img src="/data1/images/39291212campwallpapers.jpg" alt="javascript slideshow" title="39291212-camp-wallpapers" id="wows1_1"/></a></li>
+        <li><img src="/data1/images/39791156campwallpapers.jpg" alt="39791156-camp-wallpapers" title="39791156-camp-wallpapers" id="wows1_2"/></li>
+    </ul></div>
+<div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com">wordpress slider plugin</a> by WOWSlider.com v7.7</div>
+<div class="ws_shadow"></div>
+</div>  
+<script type="text/javascript" src="/engine1/wowslider.js"></script>
+<script type="text/javascript" src="/engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+
+    
+    <!-- jQuery -->
+    <script src="/vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="/js/jqBootstrapValidation.js"></script>
+    <script src="/js/contact_me.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="/js/agency.min.js"></script>
+
+</body>
+
+</html>
